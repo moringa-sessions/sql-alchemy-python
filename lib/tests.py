@@ -5,7 +5,7 @@ from main import create_post, get_post, update_post, delete_post
 # ===== USER CRUD
 print(">>>>>>>>>>>> USER OPERATIONS <<<<<<<<<<<")
 print("***** Creating new user *****")
-user = create_user("Mike aJ", "mike@developerske.com", +2547888999)
+user = create_user("Mike J", "mikej@developerske.com", +2547888999)
 print(f"Created User => {user.username}")
 
 print("")
@@ -14,7 +14,7 @@ retrieved_user = get_user(user.id)
 print(f"Retrieved User => {retrieved_user.username}, ID => {retrieved_user.id}, phone => {retrieved_user.phone} ")
 
 print("***** Update User *****")
-updated_user_data = {'username': 'Kelvi', 'email': 'kelvink@developerske.com', "phone": +254700000000}
+updated_user_data = {'username': 'Kevin', 'email': 'kelvinkip@developerske.com', "phone": +254700000000}
 updated_user = update_user(user.id, updated_user_data)
 print(f"Updated User => {updated_user.username}, Email => {updated_user.email}")
 
@@ -37,7 +37,7 @@ print(f"Deleted User => {deleted_user.username}, ID => {deleted_user.id}")
 # ====== POSTS CRUD
 print()
 print(">>>>>>>>>>>> POST OPERATIONS <<<<<<<<<<<")
-user = create_user("Mercy Mikes", "mmikes@developerske.com", +25478889909)
+user = create_user("Mercy Mike", "mmike@developerske.com", +25478889909)
 
 print("***** Create post *****")
 post = create_post("First Post", user.id, "This is the content of the first post.")
